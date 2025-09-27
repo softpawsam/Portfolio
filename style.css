@@ -267,6 +267,12 @@ body {
             z-index: 1;
         }
 
+        .skills {
+            margin-top: 60px;
+            grid-column: 1 / -1; /* This makes the skills section span across both grid columns */
+            width: 100%;
+        }
+
         .skills-title{
             font-size: clamp(3rem, 6vw, 5rem);
             font-weight: 300;
@@ -277,29 +283,49 @@ body {
             text-align: center;
         }
 
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
         .skill-card{
-            position: relative;
             height: 200px;
             width: 200px;
             background-color: whitesmoke;
             border-radius: 20px;
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         .skill-image{
-            position: absolute;
-            width: 50%;
-            margin-left: 25%;
-            margin-top: 20px;
+            width: 60%;
             height: auto;
             object-fit: cover;
+            margin-top: 10px;
         }
 
         .skill-name{
-            position: absolute;
-            margin-top: 120px;
-            margin-left: 25%;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c2c2c;
             text-align: center;
+            margin: 0;
+            margin-bottom: 10px;
         }
 
         /* Decorative elements for landing */
@@ -368,10 +394,6 @@ body {
                 margin: 20px auto 0;
                 max-width: 300px;
             }
-
-            .stats-grid {
-                justify-items: center;
-            }
             
             .main-title {
                 font-size: clamp(3rem, 10vw, 5rem);
@@ -415,11 +437,6 @@ body {
 
             .about-container {
                 padding: 0 20px;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
             }
 
             .about-description {
