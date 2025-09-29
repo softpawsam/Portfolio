@@ -15,8 +15,8 @@
         <ul>
             <li onclick="scrollToSection('landing')">Home</li>
             <li onclick="scrollToSection('about')">About Me</li>
-            <li>Achievement</li>
-            <li>Projects</li>
+            <li onclick="scrollToSection('skills')">Skills</li>
+            <li onclick="scrollToSection('projects')">Projects</li>
         </ul>
     </div>
     
@@ -47,7 +47,7 @@
         <div class="about-container">
             <div class="about-image-section">
                 <div class="about-image-wrapper">
-                    <div class="about-image"></div>
+                    <img src="./assets/pfp.jpg" alt="" class="about-image">
                 </div>  
             </div>
 
@@ -63,14 +63,17 @@
                       I look forward to applying my knowledge and contributing to impactful projects that leverage technology to solve real-world challenges.
                 </p>
 
-                
-                
             </div>
+            
+        </div>
+    </section>
 
-            <div class="skills">
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+
                 <h1 class="skills-title">Skills</h1>
                 
-                <div class="skills-container">
+                <div class="skills-cards-container">
                     <div class="skill-card">
                         <img src="./assets/cPlus.png" alt="" class="skill-image">
                         <h2 class="skill-name">C++</h2>
@@ -113,12 +116,112 @@
                     </div>
 
                 </div>
-                        
+                    
             </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <h1 class="projects-title">
+                Projects
+            </h1>
+
+             <a href="https://drive.google.com/drive/folders/1XY9kpesvNe2dRtmgRBbIs6tGNl1547Yd?usp=drive_link"
+             class="projects-card">
+                <img src="./assets/c-tumor.png" alt="" class="projects-image">
+                
+                <div class="projects-content">
+                     <h2 class="projects-name">CTumor</h2>
+
+                     <h3 class="projects-desc">
+                        cTumor is a software engineering project that implements
+                         artificial intelligence to detect tumors with precision.
+                     </h3>
+                </div>
+               
+            </a>
+
+             <a href="https://drive.google.com/drive/folders/1Alzl-xs-bqZNgIpI6HPp6u5JbC35BURu?usp=sharing"
+             class="projects-card">
+                <img src="./assets/diagnosio.png" alt="" class="projects-image">
+                
+                <div class="projects-content">
+                     <h2 class="projects-name">Diagnosio</h2>
+
+                     <h3 class="projects-desc">
+                        Diagnosio is a machine learning project that applies predictive analytics
+                         with KNN to classify lung cancer prognosis with optimized accuracy.
+                     </h3>
+                </div>
+               
+            </a>
+
+             <a href="https://drive.google.com/drive/folders/1rkaw2QNwIAbodO6xAHMhlw_Szy13iLHL?usp=drive_link"
+             class="projects-card">
+                <img src="./assets/lungCancer.png" alt="" class="projects-image">
+                
+                <div class="projects-content">
+                     <h2 class="projects-name">Lung Cancer Data Analytics</h2>
+
+                     <h3 class="projects-desc">
+                        Implemented data cleaning, visualization, and feature encoding on a
+                         lung cancer dataset to prepare it for predictive modeling and further analysis.
+                     </h3>
+                </div>
+               
+            </a>
+            
+             <a href="https://drive.google.com/drive/folders/1WGJNsxHAZmImkv9EsbVsBQFiQt9xqbSU"
+             class="projects-card">
+                <img src="./assets/Tuberculosis.jpg" alt="" class="projects-image">
+                
+                <div class="projects-content">
+                     <h2 class="projects-name">TBC Detection with Big Data & AI</h2>
+
+                     <h3 class="projects-desc">
+                        Implementation of big data processing and deep learning techniques to handle
+                         a large-scale medical image dataset and detect tumors using Convolutional Neural Networks.
+                     </h3>
+                </div>
+               
+            </a>
+
+             <a href="https://drive.google.com/drive/folders/1bIJUPpDm720YJMO-8R2zoQPHAurnavG0?usp=drive_link"
+             class="projects-card">
+                <img src="./assets/research.jpg" alt="" class="projects-image">
+                
+                <div class="projects-content">
+                     <h2 class="projects-name">Research Methodology</h2>
+
+                     <h3 class="projects-desc">
+                       Meat freshness classification project combining GLCM for texture analysis
+                        and CNN for deep learning to achieve accurate freshness detection.
+                     </h3>
+                </div>
+               
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1bIJUPpDm720YJMO-8R2zoQPHAurnavG0?usp=drive_link"
+             class="projects-card">
+                <img src="./assets/research.jpg" alt="" class="projects-image">
+                
+                <div class="projects-content">
+                    <h2 class="projects-name">Research Methodology</h2>
+                    <h3 class="projects-desc">
+                        Meat freshness classification project combining GLCM for texture analysis
+                        and CNN for deep learning to achieve accurate freshness detection.
+                    </h3>
+                </div>
+            </a>
 
             
+            
+        
         </div>
+
     </section>
+
+    
 
     <script>
         function scrollToSection(sectionId) {
