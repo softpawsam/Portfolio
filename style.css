@@ -640,9 +640,70 @@ body {
     height: 26px;
     }
 
+    .about-section::before {
+        width: 250px;
+        height: 250px;
+        left: -80px;
+        top: 10%;
+    }
+    
+    .about-section::after {
+        width: 200px;
+        height: 200px;
+        right: -60px;
+        bottom: 5%;
+    }
+    
+    .skills-section::before {
+        width: 250px;
+        height: 250px;
+        left: -80px;
+        top: 50%;
+    }
+    
+    .skills-section::after {
+        width: 200px;
+        height: 200px;
+        right: -60px;
+        bottom: 50%;
+    }
+    
+    .projects-section::before {
+        width: 200px;
+        height: 200px;
+        left: -60px;
+        top: 30px;
+    }
+    
+    .projects-section::after {
+        width: 150px;
+        height: 150px;
+        right: -40px;
+        bottom: 30px;
+    }
+    
+    .container::before {
+        width: 200px;
+        height: 200px;
+        left: -60px;
+        top: -60px;
+    }
+    
+    .container::after {
+        width: 150px;
+        height: 150px;
+        right: -40px;
+        bottom: -30px;
+    }
+
 }
 
 @media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .nav-bar ul {
     gap: 15px;
     flex-wrap: wrap;
@@ -714,6 +775,38 @@ body {
     .projects-desc {
     font-size: 0.9rem;
     }
+
+    .about-section::before,
+    .skills-section::before {
+        width: 150px;
+        height: 150px;
+        left: -50px;
+    }
+    
+    .about-section::after,
+    .skills-section::after,
+    .projects-section::after {
+            width: 120px;
+            height: 120px;
+            right: -40px;
+        }
+        
+        .projects-section::before,
+        .container::before {
+            width: 120px;
+            height: 120px;
+            left: -40px;
+        }
+        
+        .container::after {
+            width: 100px;
+            height: 100px;
+            right: -30px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
 }
 
 /* Animations */
@@ -772,4 +865,8 @@ body {
 
 .floating-card {
     animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+html, body {
+    overflow-x: hidden;
 }
