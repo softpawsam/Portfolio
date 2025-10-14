@@ -1,281 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav-bar">
-        <ul>
-            <li onclick="scrollToSection('landing')">Home</li>
-            <li onclick="scrollToSection('about')">About Me</li>
-            <li onclick="scrollToSection('skills')">Skills</li>
-            <li onclick="scrollToSection('projects')">Projects</li>
-        </ul>
+      <ul>
+        <li onclick="scrollToSection('landing')">Home</li>
+        <li onclick="scrollToSection('about')">About Me</li>
+        <li onclick="scrollToSection('skills')">Skills</li>
+        <li onclick="scrollToSection('projects')">Projects</li>
+      </ul>
     </div>
-    
+
     <!-- Landing Section -->
     <section id="landing" class="landing-section">
-        <div class="container">
-            <div class="text-section">
-                <h1 class="main-title">
-                    Hello! <br> <span class="welcome">Welcome to my Portfolio</span>
-                </h1>
-            </div>
-            
-            <div class="image-section">
-                
-                <img src="./assets/pfp.jpg"
-                 alt="Designer portrait" 
-                 class="hero-image">
-                
-                <div class="intro-text">
-                    <p>Hi, I'm <span class="highlight">Samuel</span>, a third-year Computer Science student at Bina Nusantara University.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-section">
+          <h1 class="main-title">
+            Hello! <br />
+            <span class="welcome">Welcome to my Portfolio</span>
+          </h1>
         </div>
+
+        <div class="image-section">
+          <img
+            src="./assets/pfp.jpg"
+            alt="Designer portrait"
+            class="hero-image"
+          />
+
+          <div class="intro-text">
+            <p>
+              Hi, I'm <span class="highlight">Samuel</span>, a third-year
+              Computer Science student at Bina Nusantara University.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="about-section">
-        <div class="about-container">
-            <div class="about-image-section">
-                <div class="about-image-wrapper">
-                    <img src="./assets/aboutMe.png" alt="" class="about-image">
-                </div>  
-            </div>
-
-            <div class="about-content">
-                
-                <h2 class="about-title">About Me</h2>
-                
-                <p class="about-description">
-                    Hello! My name is Samuel Adrian, an undergraduate Computer Science student at BINUS University
-                     with interests in database systems and software engineering, especially web and mobile app development.
-                      I am passionate about creating efficient, reliable,
-                     and user-centered solutions while strengthening my skills in programming, system design, and problem-solving.
-                      I look forward to applying my knowledge and contributing to impactful projects that leverage technology to solve real-world challenges.
-                </p>
-
-            </div>
-            
+      <div class="about-container">
+        <div class="about-image-section">
+          <div class="about-image-wrapper">
+            <img src="./assets/aboutMe.png" alt="" class="about-image" />
+          </div>
         </div>
+
+        <div class="about-content">
+          <h2 class="about-title">About Me</h2>
+
+          <p class="about-description">
+            Hello! My name is Samuel Adrian, an undergraduate Computer Science
+            student at BINUS University with interests in database systems and
+            software engineering, especially web and mobile app development. I
+            am passionate about creating efficient, reliable, and user-centered
+            solutions while strengthening my skills in programming, system
+            design, and problem-solving. I look forward to applying my knowledge
+            and contributing to impactful projects that leverage technology to
+            solve real-world challenges.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="skills-section">
-        <div class="skills-container">
+      <div class="skills-container">
+        <h1 class="skills-title">Skills</h1>
 
-                <h1 class="skills-title">Skills</h1>
-                
-                <div class="skills-cards-container">
-                    <div class="skill-card">
-                        <img src="./assets/cPlus.png" alt="" class="skill-image">
-                        <h2 class="skill-name">C++</h2>
-                    </div>
-                    
-                    <!-- Add more skill cards here -->
-                    <div class="skill-card">
-                        <img src="./assets/javascript.png" alt="" class="skill-image">
-                        <h2 class="skill-name">JavaScript</h2>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <img src="./assets/java.png" alt="" class="skill-image">
-                        <h2 class="skill-name">Java</h2>
-                    </div>
+        <div class="skills-cards-container">
+          <div class="skill-card">
+            <img src="./assets/python.png" alt="" class="skill-image" />
+            <h2 class="skill-name">Python</h2>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/cPlus.png" alt="" class="skill-image" />
+            <h2 class="skill-name">C++</h2>
+          </div>
 
-                    <div class="skill-card">
-                        <img src="./assets/python.png" alt="" class="skill-image">
-                        <h2 class="skill-name">Python</h2>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <img src="./assets/html-5.png" alt="" class="skill-image">
-                        <h2 class="skill-name">HTML 5</h2>
-                    </div>
+          <div class="skill-card">
+            <img src="./assets/java.png" alt="" class="skill-image" />
+            <h2 class="skill-name">Java</h2>
+          </div>
 
-                    <div class="skill-card">
-                        <img src="./assets/css-3.png" alt="" class="skill-image">
-                        <h2 class="skill-name">CSS 3</h2>
-                    </div>
+          <div class="skill-card">
+            <img src="./assets/javascript.png" alt="" class="skill-image" />
+            <h2 class="skill-name">JavaScript</h2>
+          </div>
 
-                    <div class="skill-card">
-                        <img src="./assets/kotlin.png" alt="" class="skill-image">
-                        <h2 class="skill-name">kotlin</h2>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <img src="./assets/firebase.png" alt="" class="skill-image">
-                        <h2 class="skill-name">Firebase</h2>
-                    </div>
+          <div class="skill-card">
+            <img src="./assets/html-5.png" alt="" class="skill-image" />
+            <h2 class="skill-name">HTML 5</h2>
+          </div>
 
-                </div>
-                    
-            </div>
+          <div class="skill-card">
+            <img src="./assets/css-3.png" alt="" class="skill-image" />
+            <h2 class="skill-name">CSS 3</h2>
+          </div>
+
+          <div class="skill-card">
+            <img src="./assets/kotlin.png" alt="" class="skill-image" />
+            <h2 class="skill-name">kotlin</h2>
+          </div>
+
+          <div class="skill-card">
+            <img src="./assets/firebase.png" alt="" class="skill-image" />
+            <h2 class="skill-name">Firebase</h2>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/Postgre.png" alt="" class="skill-image" />
+            <h2 class="skill-name">Postgre SQL</h2>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="projects-section">
-        <div class="projects-container">
-            <h1 class="projects-title">
-                Projects
-            </h1>
+      <div class="projects-container">
+        <h1 class="projects-title">Projects</h1>
 
-             <a href="https://drive.google.com/drive/folders/1XY9kpesvNe2dRtmgRBbIs6tGNl1547Yd?usp=drive_link"
-             class="projects-card">
-                <img src="./assets/c-tumor.png" alt="" class="projects-image">
-                
-                <div class="projects-content">
-                     <h2 class="projects-name">CTumor</h2>
+        <a
+          href="https://drive.google.com/drive/folders/1XY9kpesvNe2dRtmgRBbIs6tGNl1547Yd?usp=drive_link"
+          class="projects-card"
+        >
+          <img src="./assets/c-tumor.png" alt="" class="projects-image" />
 
-                     <h3 class="projects-desc">
-                        cTumor is a software engineering project that implements
-                         artificial intelligence to detect tumors with precision.
-                     </h3>
-                </div>
-               
-            </a>
+          <div class="projects-content">
+            <h2 class="projects-name">CTumor</h2>
 
-             <a href="https://drive.google.com/drive/folders/1Alzl-xs-bqZNgIpI6HPp6u5JbC35BURu?usp=sharing"
-             class="projects-card">
-                <img src="./assets/diagnosio.png" alt="" class="projects-image">
-                
-                <div class="projects-content">
-                     <h2 class="projects-name">Diagnosio</h2>
+            <h3 class="projects-desc">
+              cTumor is a software engineering project that implements
+              artificial intelligence to detect tumors with precision.
+            </h3>
+          </div>
+        </a>
 
-                     <h3 class="projects-desc">
-                        Diagnosio is a machine learning project that applies predictive analytics
-                         with KNN to classify lung cancer prognosis with optimized accuracy.
-                     </h3>
-                </div>
-               
-            </a>
+        <a
+          href="https://drive.google.com/drive/folders/1Alzl-xs-bqZNgIpI6HPp6u5JbC35BURu?usp=sharing"
+          class="projects-card"
+        >
+          <img src="./assets/diagnosio.png" alt="" class="projects-image" />
 
-             <a href="https://drive.google.com/drive/folders/1rkaw2QNwIAbodO6xAHMhlw_Szy13iLHL?usp=drive_link"
-             class="projects-card">
-                <img src="./assets/lungCancer.png" alt="" class="projects-image">
-                
-                <div class="projects-content">
-                     <h2 class="projects-name">Lung Cancer Data Analytics</h2>
+          <div class="projects-content">
+            <h2 class="projects-name">Diagnosio</h2>
 
-                     <h3 class="projects-desc">
-                        Implemented data cleaning, visualization, and feature encoding on a
-                         lung cancer dataset to prepare it for predictive modeling and further analysis.
-                     </h3>
-                </div>
-               
-            </a>
-            
-             <a href="https://drive.google.com/drive/folders/1WGJNsxHAZmImkv9EsbVsBQFiQt9xqbSU"
-             class="projects-card">
-                <img src="./assets/Tuberculosis.jpg" alt="" class="projects-image">
-                
-                <div class="projects-content">
-                     <h2 class="projects-name">TB Detection with Big Data & AI</h2>
+            <h3 class="projects-desc">
+              Diagnosio is a machine learning project that applies predictive
+              analytics with KNN to classify lung cancer prognosis with
+              optimized accuracy.
+            </h3>
+          </div>
+        </a>
 
-                     <h3 class="projects-desc">
-                        Implementation of big data processing and deep learning techniques to handle
-                         a large-scale medical image dataset and detect tumors using Convolutional Neural Networks.
-                     </h3>
-                </div>
-               
-            </a>
+        <a
+          href="https://drive.google.com/drive/folders/1rkaw2QNwIAbodO6xAHMhlw_Szy13iLHL?usp=drive_link"
+          class="projects-card"
+        >
+          <img src="./assets/lungCancer.png" alt="" class="projects-image" />
 
-             <a href="https://drive.google.com/drive/folders/1bIJUPpDm720YJMO-8R2zoQPHAurnavG0?usp=drive_link"
-             class="projects-card">
-                <img src="./assets/research.jpg" alt="" class="projects-image">
-                
-                <div class="projects-content">
-                     <h2 class="projects-name">Research Methodology</h2>
+          <div class="projects-content">
+            <h2 class="projects-name">Lung Cancer Data Analytics</h2>
 
-                     <h3 class="projects-desc">
-                       Meat freshness classification project combining GLCM for texture analysis
-                        and CNN for deep learning to achieve accurate freshness detection.
-                     </h3>
-                </div>
-               
-            </a>
+            <h3 class="projects-desc">
+              Implemented data cleaning, visualization, and feature encoding on
+              a lung cancer dataset to prepare it for predictive modeling and
+              further analysis.
+            </h3>
+          </div>
+        </a>
 
-            <a href="https://drive.google.com/drive/folders/1eaPz-1PplF9X8DHdTfYvKn49wCWF-XAg?usp=drive_link"
-             class="projects-card">
-                <img src="./assets/hci.png" alt="" class="projects-image">
-                
-                <div class="projects-content">
-                    <h2 class="projects-name">Human-Computer Interaction Web</h2>
-                    <h3 class="projects-desc">
-                        A HCI web project focused on applying UI/UX principles to design an intuitive and user-friendly
-                         website interface.
-                    </h3>
-                </div>
-            </a>
+        <a
+          href="https://drive.google.com/drive/folders/1WGJNsxHAZmImkv9EsbVsBQFiQt9xqbSU"
+          class="projects-card"
+        >
+          <img src="./assets/Tuberculosis.jpg" alt="" class="projects-image" />
 
-            
-            
-        
-        </div>
+          <div class="projects-content">
+            <h2 class="projects-name">TB Detection with Big Data & AI</h2>
 
+            <h3 class="projects-desc">
+              Implementation of big data processing and deep learning techniques
+              to handle a large-scale medical image dataset and detect tumors
+              using Convolutional Neural Networks.
+            </h3>
+          </div>
+        </a>
+
+        <a
+          href="https://drive.google.com/drive/folders/1bIJUPpDm720YJMO-8R2zoQPHAurnavG0?usp=drive_link"
+          class="projects-card"
+        >
+          <img src="./assets/research.jpg" alt="" class="projects-image" />
+
+          <div class="projects-content">
+            <h2 class="projects-name">Research Methodology</h2>
+
+            <h3 class="projects-desc">
+              Meat freshness classification project combining GLCM for texture
+              analysis and CNN for deep learning to achieve accurate freshness
+              detection.
+            </h3>
+          </div>
+        </a>
+
+        <a
+          href="https://drive.google.com/drive/folders/1eaPz-1PplF9X8DHdTfYvKn49wCWF-XAg?usp=drive_link"
+          class="projects-card"
+        >
+          <img src="./assets/hci.png" alt="" class="projects-image" />
+
+          <div class="projects-content">
+            <h2 class="projects-name">Human-Computer Interaction Web</h2>
+            <h3 class="projects-desc">
+              A HCI web project focused on applying UI/UX principles to design
+              an intuitive and user-friendly website interface.
+            </h3>
+          </div>
+        </a>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-container">
-            
-            <a href="https://www.instagram.com/samm.adrr?igsh=a2EybHBvdDg4Zjdk " class="social-circle">
-                <img src="./assets/insta.svg" alt="" class="social-icon">
-            </a>
+      <div class="footer-container">
+        <a
+          href="https://www.instagram.com/samm.adrr?igsh=a2EybHBvdDg4Zjdk "
+          class="social-circle"
+        >
+          <img src="./assets/insta.svg" alt="" class="social-icon" />
+        </a>
 
-            <a href="https://www.linkedin.com/in/samuel-adrian-08b6b2352/" class="social-circle">
-                <img src="./assets/linked-in.svg" alt="" class="social-icon">
-            </a>
-            
-        </div>
+        <a
+          href="https://www.linkedin.com/in/samuel-adrian-08b6b2352/"
+          class="social-circle"
+        >
+          <img src="./assets/linked-in.svg" alt="" class="social-icon" />
+        </a>
+      </div>
     </footer>
 
     <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        // Add scroll effect to navigation
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navItems = document.querySelectorAll('.nav-bar li');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
+      function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+          behavior: "smooth",
         });
+      }
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+      // Add scroll effect to navigation
+      window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section");
+        const navItems = document.querySelectorAll(".nav-bar li");
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animated elements
-        document.querySelectorAll('.stat-item, .floating-card').forEach(el => {
-            observer.observe(el);
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
         });
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document.querySelectorAll(".stat-item, .floating-card").forEach((el) => {
+        observer.observe(el);
+      });
     </script>
-</body>
+  </body>
 </html>
